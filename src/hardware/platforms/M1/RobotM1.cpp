@@ -114,7 +114,7 @@ bool RobotM1::initializeRobotParams(std::string robotName) {
 
     // need to use address of base directory because when run with ROS, working directory is ~/.ros
     std::string baseDirectory = XSTR(BASE_DIRECTORY);
-    std::string relativeFilePath = "/config/m1_params.yaml";
+    std::string relativeFilePath = "/CANOpenRobotController/config/m1_params.yaml";
 
     YAML::Node params = YAML::LoadFile(baseDirectory + relativeFilePath);
 
