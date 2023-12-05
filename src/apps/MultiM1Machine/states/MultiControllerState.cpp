@@ -514,7 +514,7 @@ void MultiControllerState::dynReconfCallback(CORC::dynamic_paramsConfig &config,
     if (vel_isokinetic_ != config.vel_isokinetic){
         vel_isokinetic_ = config.vel_isokinetic;
     }
-    if (amplitude_isokinetic_ = config.amplitude_isokinetic){
+    if ((amplitude_isokinetic_ = config.amplitude_isokinetic)){
         amplitude_isokinetic_ = config.amplitude_isokinetic;
     }
     
